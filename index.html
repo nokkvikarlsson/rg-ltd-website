@@ -75,6 +75,31 @@
     font-size: 16px;
     margin: 0;
   }
+  .highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .highlight {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .highlight h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+  }
+  .highlight p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 560px) {
+    .highlights {
+      grid-template-columns: 1fr;
+    }
+  }
   .product-card {
     display: flex;
     align-items: center;
@@ -143,7 +168,21 @@
 <section>
   <div class="wrap">
     <h2>About</h2>
-    <p>Renown Global Limited, based in Nairobi, Kenya, gives brands a direct line to engaged customers. Players earn real rewards — airtime, data, vouchers — by playing well inside our mobile games, and sponsor brands get their name in front of that audience with a full delivery and audit trail proving exactly who was reached. The game is the front door; the audience and the reach are what we sell.</p>
+    <p>Renown Global Limited, based in Nairobi, Kenya, connects engaged players with brands who want to reach them.</p>
+    <div class="highlights">
+      <div class="highlight">
+        <h3>Real, engaged players</h3>
+        <p>Every player we deliver has opted in and played — not a passive ad impression.</p>
+      </div>
+      <div class="highlight">
+        <h3>Direct brand connection</h3>
+        <p>Sponsor brands reach that audience through branded, in-game reward campaigns.</p>
+      </div>
+      <div class="highlight">
+        <h3>Full delivery &amp; audit trail</h3>
+        <p>Every reward claim is logged — proof of exactly who was reached, and when.</p>
+      </div>
+    </div>
   </div>
 </section>
 
